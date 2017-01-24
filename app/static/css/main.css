@@ -36,15 +36,34 @@ button {
     position: relative;
 }
 .header {
+    display: flex;
+    align-items: center;
     text-align: center;
+    justify-content: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
     background-color: #1976d2;
     color: white;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-.header .h1 {
+.header .logo {
+    border: 1px solid white;
+    font-size: 1.2em;
+}
+.header .main-info {
     text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* наверх и влево */
     1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
     1px 1px 1px rgba(0,0,0,0.7); /* тёмная тень */
+}
+.header .main-info {
+    display: flex;
+    flex-direction: column;
+}
+.header .main-info .name {
+    font-size: 2.1em;
+}
+.header .main-info .moto {
+    font-size: 1.5em;
 }
 .content {
     margin-top: 1em;
