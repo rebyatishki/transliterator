@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Transliterator</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <h1>Russian-angliyskiy transliterator</h1>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="in-container">
+                <span class="label">Enter vash text suda</span>
+                <textarea maxlength="400" class="input" id="in" placeholder="For primer: 'Водка внутри, а снаружи бутылка'"></textarea>
+            </div>
+            <div class="out-container">
+                <span class="label">See vash result zdes</span>
+                <div class="output">
+                    <span id="out"></span>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button id="sendbtn" class="button">Let's me speak from my heart</button>
+            </div>
+            <div class="error">
+                <span>Error:</span>
+                <span id='error-message' class="message"></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><span>2017 Rebyatishki & Co</span></div>
+</div>
+</body>
+<script src="js/ajax.js"></script>
+<script src="js/index.js"></script>
+</html>

@@ -1,0 +1,166 @@
+body, html {
+    height: 100%;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240,240,240);
+    font-family: 'GothamProRegular', monospace;
+}
+textarea {
+    resize: none;
+    margin-top: 0;
+    margin-left: 1em;
+    padding: 0;
+    border: 0;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    transition: border-bottom-color 0.5s cubic-bezier(.25,.8,.25,1);
+}
+span.label {
+    color: rgba(0,0,0,0.8);
+    margin-bottom: .5em;
+    transition: color 0.5s cubic-bezier(.25,.8,.25,1);
+}
+textarea:focus {
+    border-bottom: 2px solid #2962ff;
+}
+button {
+    margin: 0;
+    padding: 0;
+    background: 0;
+    border: 0;
+}
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.header {
+    text-align: center;
+    background-color: #1976d2;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.header .h1 {
+    text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* наверх и влево */
+    1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
+    1px 1px 1px rgba(0,0,0,0.7); /* тёмная тень */
+}
+.content {
+    margin-top: 1em;
+    padding-top:2em;
+    padding-bottom: 4em;
+    background-color: rgb(240,240,240);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:2em;
+    padding-bottom: 2em;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    height: 100%;
+}
+.input {
+    height: 100%;
+}
+.in-container,
+.out-container{
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+.in-container {
+    flex: 1;
+}
+.out-container {
+    flex: 2;
+}
+.out-container .output {
+    overflow-y: auto;
+}
+.btn-container {
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.output {
+    margin-left: 1em;
+    background-color: #f4f4f4;
+    min-height: 100%;
+}
+.footer {
+    height: 2em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    padding-right: 5em;
+    /*background-color: #666;*/
+    background-color: rgb(48, 48, 48);
+    color: white;
+    text-align: right;
+}
+.footer > span {
+    font-size: 1.7em;
+}
+
+.button {
+    font-family: 'GothamProRegular', sans-serif;
+    background-color: #2196f3;
+    color: white;
+    font-weight: 600;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    padding-right: 2em;
+    padding-left: 2em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.button:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.button:focus {
+    text-decoration:none;
+    outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.error {
+    overflow: hidden;
+    line-height: 2.4em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: red;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    -webkit-transition: height 1s ease-out 0.3s;
+    -moz-transition: height 1s ease-out 0.3s;
+    -o-transition: height 1s ease-out 0.3s;
+    transition: height 1s ease-out 0.3s;
+    text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* наверх и влево */
+    1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
+    1px 1px 1px rgba(0,0,0,0.7); /* тёмная тень */
+}
+.error .error-header {
+    background-color: #1976d2;
+    color: white;
+}
+.error .error-message {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}

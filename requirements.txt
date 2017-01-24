@@ -1,0 +1,13 @@
+bleach==1.5.0
+click==6.7
+Flask==0.12
+html5lib==0.9999999
+itsdangerous==0.24
+Jinja2==2.9.4
+lorem-ipsum-generator==0.3
+MarkupSafe==0.23
+microsofttranslator==0.8
+requests==2.12.5
+six==1.10.0
+transliterate==1.9
+Werkzeug==0.11.15
