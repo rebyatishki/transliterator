@@ -1,5 +1,14 @@
 # tranliterator
 en -> ru+en transliterator app
+config.py contains the TRANSLATOR_ID and TRANSLATOR_SECRET variables
+of the microsoft translator client_id and client_secret keys
+
+https://datamarket.azure.com/dataset/bing/microsofttranslator#terms
+register the microsoft account, then in this page click MY ACCOUNT,
+then DEVELOPERS button in the left column and click REGISTER button
+you will register the application. The application client_id and
+client_secret will the the TRANSLATOR_ID and TRANSLATOR_SECRET
+variables.
 
 ## Development
 
