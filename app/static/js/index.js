@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     var textArea = document.querySelectorAll('textarea')[0],
         output = document.getElementById('out');
+    textArea.focus();
     textArea.addEventListener('focus', function(e){
         e.target.previousSibling.previousSibling.style.color = '#2962ff';
     });

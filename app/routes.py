@@ -39,7 +39,6 @@ def translate():
         # if is's a word, not a comma, or space or whatever
         if re.match(word_regex, splitted_original[i]):
             # transliterate it or push in array for translation
-            print transliterate_flag
             if transliterate_flag:
                 splitted_original[i] = translit(splitted_original[i], 'ru', reversed=True)
             else:
