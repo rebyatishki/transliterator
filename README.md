@@ -7,7 +7,7 @@ en -> ru+en transliterator app
 git clone https://github.com/rebyatishki/tranliterator
 cd transliterator
 pip install -r requirements.txt
-cp contrib/config.py .
+cp contrib/config-example.py config.py
 # edit config.py
 export APP_SETTINGS="config.DevelopmentConfig"
 python run.py
@@ -22,7 +22,7 @@ git clone https://github.com/rebyatishki/tranliterator /var/www/transliterator
 cd /var/www/transliterator
 pip install -r requirements.txt
 apt-get install -y nginx uwsgi uwsgi-plugin-python
-cp contrib/config.py .
+cp contrib/config-example.py config.py
 # edit config.py
 cp contrib/uwsgi.ini /etc/uwsgi/apps-available/transliterator.ini
 ln -s /etc/uwsgi/apps-available/transliterator.ini /etc/uwsgi/apps-enabled/transliterator.ini
