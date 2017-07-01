@@ -5,12 +5,10 @@ class Config(object):
 
 class ProductionConfig(Config):
     DEBUG = False
-    TRANSLATOR_ID = 'id_prod'
-    TRANSLATOR_SECRET = 'secret_prod'
+    TRANSLATOR_SUBSCRIPTION_KEY = 'azuresubscriptionkey'
 
 
 class DevelopmentConfig(Config):
     DEVELOPMENT = True
     DEBUG = True
-    TRANSLATOR_ID = 'id_dev'
-    TRANSLATOR_SECRET = 'secret_dev'
+    TRANSLATOR_SUBSCRIPTION_KEY = 'azuresubscriptionkey'

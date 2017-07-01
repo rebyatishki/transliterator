@@ -3,7 +3,7 @@ from app import app
 from flask import request, abort, jsonify, make_response
 import bleach
 import re
-from microsofttranslator import Translator
+from mstranslator import Translator
 from transliterate import translit
 
 
@@ -48,8 +48,8 @@ def translate():
     translated = [{}]
     try:
         # translate the words
-        translator = Translator(app.config['TRANSLATOR_ID'], app.config['TRANSLATOR_SECRET'])
-        translated = translator.translate_array(to_translate, 'en', 'ru')
+        translator = Translator(app.config['TRANSLATOR_SUBSCRIPTION_KEY'])
+        translated = translator.translate_array(to_translate, lang_from='ru', lang_to='en')
     except Exception as e:
         abort(make_response(jsonify(message="Try again popozhe"), 500))
     # put the translated words back using the to_translate_indexes array
