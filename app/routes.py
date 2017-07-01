@@ -51,6 +51,7 @@ def translate():
         translator = Translator(app.config['TRANSLATOR_SUBSCRIPTION_KEY'])
         translated = translator.translate_array(to_translate, lang_from='ru', lang_to='en')
     except Exception as e:
+        print(e)
         abort(make_response(jsonify(message="Try again popozhe"), 500))
     # put the translated words back using the to_translate_indexes array
     for z in range(0, len(to_translate_indexes)):
