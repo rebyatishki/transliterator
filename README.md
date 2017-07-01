@@ -1,14 +1,17 @@
 # tranliterator
 en -> ru+en transliterator app
-config.py contains the TRANSLATOR_ID and TRANSLATOR_SECRET variables
-of the microsoft translator client_id and client_secret keys
+config.py contains the `TRANSLATOR_SUBSCRIPTION_KEY` variable
+of the microsoft translator api keys
 
-https://datamarket.azure.com/dataset/bing/microsofttranslator#terms
-register the microsoft account, then in this page click MY ACCOUNT,
-then DEVELOPERS button in the left column and click REGISTER button
-you will register the application. The application client_id and
-client_secret will the the TRANSLATOR_ID and TRANSLATOR_SECRET
-variables.
+Go to https://portal.azure.com and register the microsoft account.
+
+Add Translator subscription to your Azure account
+1. Select the **+ New** -> **Intelligence + analytics** -> **Cognitive Services APIs**.
+2. Select the **API Type** option.
+3. Select either **Text Translation** or **Speech Translation**. Select the pricing tier that fits your needs.
+4. Fill out the rest of the form, and press the **Create** button. You are now subscribed to Microsoft Translator.
+5. Now retrieve your subscription key for authentication. You can find it in **All Resources** -> **Keys** option.
+
 
 ## Development
 
