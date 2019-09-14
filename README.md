@@ -1,4 +1,4 @@
-# tranliterator
+# transliterator
 en -> ru+en transliterator app
 config.py contains the `TRANSLATOR_SUBSCRIPTION_KEY` variable
 of the microsoft translator api keys
@@ -16,7 +16,7 @@ Add Translator subscription to your Azure account
 ## Development
 
 ```bash
-git clone https://github.com/rebyatishki/tranliterator
+git clone https://github.com/rebyatishki/transliterator
 cd transliterator
 pip install -r requirements.txt
 cp contrib/config-example.py config.py
@@ -30,7 +30,7 @@ python run.py
 ```bash
 sudo su -
 mkdir -p /var/www/transliterator
-git clone https://github.com/rebyatishki/tranliterator /var/www/transliterator
+git clone https://github.com/rebyatishki/transliterator /var/www/transliterator
 cd /var/www/transliterator
 pip install -r requirements.txt
 apt-get install -y nginx uwsgi uwsgi-plugin-python
